@@ -1,5 +1,2 @@
 [placeholders]
-start = { type = "string", prompt = "Which platform?", choices = [
-  { value = "", text = "Unix (Linux/macOS)" },
-  { value = "$env:", text = "Windows" }
-]}
+win = { type = "bool", prompt = "Use windows syntax?", default = false}
