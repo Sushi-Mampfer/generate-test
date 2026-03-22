@@ -1,2 +1,6 @@
-[hooks]
-init = ["init-script.rhai"]
+[placeholders]
+windows = { type = "bool", prompt = "Use windows syntax?", default = "false" }
+
+[conditional.'windows.placeholders]
+win_start="$env"
+win_quote="\""
