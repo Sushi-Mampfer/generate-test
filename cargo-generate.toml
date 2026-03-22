@@ -1,6 +1,6 @@
 [placeholders]
 windows = { type = "bool", prompt = "Use windows syntax?", default = "false" }
 
-[conditional.'windows.placeholders]
+[conditional.'windows'.placeholders]
 win_start="$env"
 win_quote="\""
