@@ -1,1 +1,5 @@
-command = "cargo leptos build --release && cargo install -q \"worker-build@^0.7\" && { % if win % }$env:{ % endif %}LEPTOS_OUTPUT_NAME=\"{{project-name}}\" worker-build --release --features ssr"
+{% if win %}
+  {% assign start ="" %}
+{% endif %}
+
+command = "cargo leptos build --release && cargo install -q \"worker-build@^0.7\" && {{ start }}LEPTOS_OUTPUT_NAME=\"{{project-name}}\" worker-build --release --features ssr"
