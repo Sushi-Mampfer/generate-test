@@ -1,6 +1,5 @@
 [placeholders]
-windows = { type = "bool", prompt = "Use windows syntax?", default = false }
-
-[conditional.'windows'.placeholders]
-win_start={ type = "string", default = "$env" }
-win_quote={ type = "string", default = "\"" }
+start = { type = "string", prompt = "Which platform?", choices = [
+  { value = "", text = "Unix (Linux/macOS)" },
+  { value = "$env:", text = "Windows" }
+]}
