@@ -1,1 +1,2 @@
-
+[hooks]
+init = ["init-script.rhai"]
