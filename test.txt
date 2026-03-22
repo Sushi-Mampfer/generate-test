@@ -1,1 +1,1 @@
-{{ my_var }}
+command = "cargo leptos build --release && cargo install -q \"worker-build@^0.7\" && {{win_start}}LEPTOS_OUTPUT_NAME={{win_quote}}{{project-name}}{{win_quote}} worker-build --release --features ssr"
