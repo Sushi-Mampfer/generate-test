@@ -1,1 +1,7 @@
-{{ os }}
+{% if os == "windows" %}
+windows_value
+{% elsif os == "macos" %}
+mac_value
+{% else %}
+linux_value
+{% endif %}
